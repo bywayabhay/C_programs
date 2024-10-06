@@ -1,4 +1,4 @@
-//	3.	WAP to calculate the area and circumference of a circle
+//3.WAP to calculate the area and circumference of a circle
 #include <stdio.h>
 #define PI 3.14159265358979323846
 int main()
