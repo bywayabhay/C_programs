@@ -20,7 +20,7 @@ int main()
     scanf("%d", &num);
 
     // printf("%d", fact(5));
-    num2 = num; // Why? --> as I'm printing num in result but if i decrement num in while loop it results to 0
+    num2 = num; // Why? --> as I'm printing num in result but if I decrement num in while loop it results to 0
 
     // iterative approach
     while (num2 > 0)
