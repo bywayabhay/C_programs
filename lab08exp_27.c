@@ -12,6 +12,7 @@ void displayArray(int arr[], int n)
 // to take array input
 void inputArray(int arr[], int n)
 {
+    printf("Enter the elements:");
     for (int i = 0; i < n; i++)
         scanf("%d", &arr[i]);
 }
@@ -48,7 +49,6 @@ int main()
 
     // taking input
     int arr[num];
-    printf("Enter the elements:");
     inputArray(arr, num);
 
     // calling selection_sort function
