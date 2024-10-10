@@ -1,8 +1,22 @@
 // 27.*WAP to sort an array element using selection sort
 
 #include <stdio.h>
+
+// to print array
+void displayArray(int arr[], int n)
+{
+    for (int i = 0; i < n; i++)
+        printf("%d ", arr[i]);
+}
+
+// to take array input
+void inputArray(int arr[], int n)
+{
+    for (int i = 0; i < n; i++)
+        scanf("%d", &arr[i]);
+}
 // Swapping
-int swap(int *ptr1, int *ptr2)
+void swap(int *ptr1, int *ptr2)
 {
     int temp;
     temp = *ptr1;
@@ -25,7 +39,6 @@ void selection_sort(int arr[], int n)
     }
 }
 
-
 int main()
 {
     // taking number of elements
@@ -33,23 +46,17 @@ int main()
     printf("Enter the number of elements:");
     scanf("%d", &num);
 
-    // input of elements by user
+    // taking input
     int arr[num];
     printf("Enter the elements:");
-    for (int i = 0; i < num; i++)
-    {
-        scanf("%d", &arr[i]);
-    }
+    inputArray(arr, num);
 
-    // calling function
+    // calling selection_sort function
     selection_sort(arr, num);
 
     // printing sorted elements
     printf("Sorted elements:");
-    for (int i = 0; i < num; i++)
-    {
-        printf("%d ", arr[i]);
-    }
+    displayArray(arr, num);
 
     return 0;
 }
